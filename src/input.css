@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://use.typekit.net/jhn5mhx.css");
+/* Font added  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.holder {
+  @apply mx-auto max-w-siteWidth px-6 md:px-46 lg:px-16;
+}
+
+@layer base {
+  body {
+    @apply flex flex-col min-h-screen bg-white text-black;
+  }
+
+  h2 {
+    @apply font-obviously font-normal leading-[100%];
+    font-size: 2rem;
+    line-height: 2.46rem;
+  }
+
+  h3 {
+    @apply text-2xl font-medium leading-[110%];
+  }
+
+  p,
+  ul:not(.main--menu, .top--menu),
+  ol {
+    @apply font-nunito text-base font-normal leading-[150%];
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.75rem;
+    }
+  }
+}
+
+header {
+  transition: all 0.3s ease-in-out;
+}
+
+body.nav-expanded header {
+  @apply bg-white;
+}
+body.nav-expanded .siteLogo svg *,
+body.nav-expanded .searchBtn svg * {
+  fill: black;
+}
+
+body.nav-expanded .top--menu > li > a,
+body.nav-expanded .main--menu > li > a {
+  @apply text-black;
+}
+
+.toggleNav i {
+  transition: all 0.3s ease-in-out;
+}
+
+body.nav-expanded .toggleNav i {
+  @apply bg-black;
+}
+
+body.nav-expanded .toggleNav i:nth-child(1) {
+  @apply rotate-45 top-[9px];
+}
+
+body.nav-expanded .toggleNav i:nth-child(2) {
+  @apply opacity-0;
+}
+
+body.nav-expanded .toggleNav i:nth-child(3) {
+  @apply -rotate-45 -top-[7px];
+}
+
+.main--menu > li:hover > a::after {
+  @apply w-full;
+}
+
+body.nav-expanded .main--menu > li > a::after {
+  @apply bg-black;
+}
+
+.floating-header .siteLogo svg *,
+.floating-header .searchBtn svg * {
+  @apply fill-white;
+}
+
+.floating-header .main--menu > li > a::after {
+  @apply bg-white;
+}
+
+.menu-item-has-children.open-nav > a::after {
+  @apply w-full;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main--menu > li > a::after {
+    @apply bg-black h-0.5 left-1/2 -translate-x-1/2 absolute w-0 -bottom-[22px];
+    content: "";
+    transition: all 0.3s ease-in-out;
+  }
+
+  .megaMenu-wrap {
+    transition: height 200ms, visibility 200ms, opacity 200ms,
+      transform 350ms ease-out;
+    transform-origin: 0 0;
+    transform: scale3d(1, 0, 0);
+  }
+
+  .menu-item-has-children.open-nav .megaMenu-wrap {
+    @apply opacity-100 visible max-h-[1000px];
+    transform: scale3d(1, 1, 1);
+  }
+
+  .menu-item-has-children.open-nav .megaMenu-wrap .sub-menu li {
+    @apply opacity-0;
+    animation-name: fadeIn;
+    animation-duration: 0.65s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.15s;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  66% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
