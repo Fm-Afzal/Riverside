@@ -21,10 +21,10 @@ ehthumbs.db
 #############################
 /*
 !assets/
-!src
-!css
-!js
-!markup
+!src/
+!css/
+!js/
+!markup/
 !.gitignore
 !package.json
 !package-lock.json
