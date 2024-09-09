@@ -24,6 +24,7 @@ ehthumbs.db
 !src/
 !css/
 !js/
+!html/
 !markup/
 !.gitignore
 !package.json
