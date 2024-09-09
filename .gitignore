@@ -20,10 +20,15 @@ ehthumbs.db
 # Ignore everything in the root except the "wp-content" directory.
 #############################
 /*
-!.gitignore
 !assets/
 !src
-!index.html
+!css
+!js
+!markup
+!.gitignore
+!package.json
+!package-lock.json
+!tailwind.config.json
 #############################
 # Ignore everything in the "wp-content" directory, except the "themes" directory.
 #############################
