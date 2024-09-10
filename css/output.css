@@ -972,6 +972,10 @@ p,
   max-width: 995px;
 }
 
+.max-w-\[691px\]{
+  max-width: 691px;
+}
+
 .flex-auto{
   flex: 1 1 auto;
 }
@@ -2168,6 +2172,10 @@ p,
   padding-left: 0.25rem;
 }
 
+.pt-2\.5{
+  padding-top: 0.625rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2336,6 +2344,11 @@ p,
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -3160,6 +3173,15 @@ body.nav-expanded .main--menu > li > a::after{
   .\[\&\>\*\:last-child\:not\(\.fullVideoBlock\)\]\:md\:pb-24>*:last-child:not(.fullVideoBlock){
     padding-bottom: 6rem;
   }
+}
+
+.\[\&\>\*\]\:font-light>*{
+  font-weight: 300;
+}
+
+.\[\&\>\*\]\:text-black>*{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .\[\&\>li\>a\]\:relative>li>a{
