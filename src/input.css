@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 /* Font added  */
 
 @tailwind base;
@@ -164,4 +164,27 @@ body.nav-expanded .main--menu > li > a::after {
 }
 .button.button-white:hover svg path:last-child {
   @apply stroke-black;
+}
+
+
+.gridPromoSlider .swiper-button-next:after,
+.gridPromoSlider .swiper-button-prev:after,
+.promoSlider .swiper-button-next:after,
+.promoSlider .swiper-button-prev:after,
+.timelineSlider .swiper-button-next:after,
+.timelineSlider .swiper-button-prev:after {
+  --tw-content: none;
+  content: var(--tw-content);
+}
+.gridPromoSlider .swiper-button-prev,
+.promoSlider .swiper-button-prev {
+  left: auto;
+  right: 4rem;
+}
+.gridPromoSlider .swiper-button-next,
+.gridPromoSlider .swiper-button-prev,
+.promoSlider .swiper-button-next,
+.promoSlider .swiper-button-prev {
+  top: -3rem;
+  width: 15px;
 }

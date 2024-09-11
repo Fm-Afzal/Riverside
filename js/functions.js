@@ -73,4 +73,26 @@ $(function () {
             }
         );
     }
-});  
+});
+
+new Swiper(".gridPromoSlider", {
+    // mousewheel: true,
+    slidesPerView: 1,
+    spaceBetween: 16,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints: {
+        1024: {
+            spaceBetween: 22,
+            slidesPerView: 3,
+        },
+        1220: {
+            spaceBetween: 22,
+            slidesPerView: 4,
+        },
+    },
+});
