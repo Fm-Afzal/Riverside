@@ -96,3 +96,23 @@ new Swiper(".gridPromoSlider", {
         },
     },
 });
+
+const promoSliders = document.querySelectorAll(".promoSlider");
+
+promoSliders.forEach(function (slider) {
+    new Swiper(slider, {
+        slidesPerView: "auto",
+        spaceBetween: 14,
+        mousewheel: true,
+        navigation: {
+            nextEl: slider.querySelector(".swiper-button-next"),
+            prevEl: slider.querySelector(".swiper-button-prev"),
+        },
+        breakpoints: {
+            1024: {
+                spaceBetween: 22,
+            },
+        },
+    });
+});
+// promoSlider end
