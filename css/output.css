@@ -764,6 +764,10 @@ p,
   z-index: 50;
 }
 
+.order-1{
+  order: 1;
+}
+
 .float-start{
   float: inline-start;
 }
@@ -1351,6 +1355,10 @@ p,
   grid-auto-flow: column dense;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1543,6 +1551,10 @@ p,
   gap: 1rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1577,6 +1589,12 @@ p,
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -2358,6 +2376,10 @@ p,
   line-height: 110%;
 }
 
+.leading-44{
+  line-height: 2.75rem;
+}
+
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
 }
@@ -2697,6 +2719,14 @@ p,
 
 .\!delay-500{
   transition-delay: 500ms !important;
+}
+
+.\!delay-300{
+  transition-delay: 300ms !important;
+}
+
+.\!delay-700{
+  transition-delay: 700ms !important;
 }
 
 .duration-300{
@@ -3209,6 +3239,14 @@ body.nav-expanded .main--menu > li > a::after{
 }
 
 @media (min-width: 1024px){
+  .lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -3219,6 +3257,10 @@ body.nav-expanded .main--menu > li > a::after{
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:flex-wrap{
@@ -3237,6 +3279,10 @@ body.nav-expanded .main--menu > li > a::after{
     gap: 3rem;
   }
 
+  .lg\:gap-16{
+    gap: 4rem;
+  }
+
   .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
@@ -3247,6 +3293,12 @@ body.nav-expanded .main--menu > li > a::after{
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:pb-2\.5{
@@ -3301,6 +3353,11 @@ body.nav-expanded .main--menu > li > a::after{
 .\[\&\>\*\]\:text-xl>*{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.\[\&\>\*\]\:text-base>*{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .\[\&\>\*\]\:font-light>*{
