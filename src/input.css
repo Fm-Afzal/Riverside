@@ -166,95 +166,97 @@ body.nav-expanded .main--menu > li > a::after {
   @apply stroke-black;
 }
 
-.gridPromoSlider .swiper-button-next:after,
-.gridPromoSlider .swiper-button-prev:after,
-.promoSlider .swiper-button-next:after,
-.promoSlider .swiper-button-prev:after,
-.timelineSlider .swiper-button-next:after,
-.timelineSlider .swiper-button-prev:after {
-  --tw-content: none;
-  content: var(--tw-content);
-}
-.gridPromoSlider .swiper-button-prev,
-.promoSlider .swiper-button-prev {
-  left: auto;
-  right: 4rem;
-}
-.gridPromoSlider .swiper-button-next,
-.gridPromoSlider .swiper-button-prev,
-.promoSlider .swiper-button-next,
-.promoSlider .swiper-button-prev {
-  top: -3rem;
-  width: 15px;
-}
+@layer utilities {
+  .gridPromoSlider .swiper-button-next:after,
+  .gridPromoSlider .swiper-button-prev:after,
+  .promoSlider .swiper-button-next:after,
+  .promoSlider .swiper-button-prev:after,
+  .timelineSlider .swiper-button-next:after,
+  .timelineSlider .swiper-button-prev:after {
+    --tw-content: none;
+    content: var(--tw-content);
+  }
+  .gridPromoSlider .swiper-button-prev,
+  .promoSlider .swiper-button-prev {
+    left: auto;
+    right: 4rem;
+  }
+  .gridPromoSlider .swiper-button-next,
+  .gridPromoSlider .swiper-button-prev,
+  .promoSlider .swiper-button-next,
+  .promoSlider .swiper-button-prev {
+    top: -3rem;
+    width: 15px;
+  }
 
-section + .fullVideoBlock {
-  margin-top: 2rem;
-}
-@media (min-width: 768px) {
   section + .fullVideoBlock {
-    margin-top: 3.125rem;
+    margin-top: 2rem;
   }
-}
+  @media (min-width: 768px) {
+    section + .fullVideoBlock {
+      margin-top: 3.125rem;
+    }
+  }
 
-.fullVideoBlock .textMarquee {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  overflow: hidden;
-}
-@media (min-width: 1024px) {
   .fullVideoBlock .textMarquee {
-    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    overflow: hidden;
   }
-}
-.fullVideoBlock .textMarquee span {
-  white-space: nowrap;
-  will-change: transform;
-  transform: translateX(0);
-  animation: marquee 24s linear infinite;
-}
-@keyframes marquee {
-  0% {
+  @media (min-width: 1024px) {
+    .fullVideoBlock .textMarquee {
+      gap: 3rem;
+    }
+  }
+  .fullVideoBlock .textMarquee span {
+    white-space: nowrap;
+    will-change: transform;
     transform: translateX(0);
+    animation: marquee 24s linear infinite;
   }
-  to {
-    transform: translateX(-100%);
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
-}
 
-.fullVideoBlock .stroke-text {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #fff;
-  text-transform: uppercase;
-  scrollbar-width: none;
-}
-
-.fullVideoBlock .stroke-text {
-  white-space: nowrap;
-  font-family: obviously-narrow, sans-serif;
-  font-size: 14.6vw;
-  font-weight: 900;
-  line-height: 105%;
-  color: #0000;
-}
-
-@media only screen and (min-width: 768px) {
   .fullVideoBlock .stroke-text {
-    -webkit-text-stroke-width: 2px;
-    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+    scrollbar-width: none;
   }
-}
-.fullVideoBlock .stroke-text {
-  -webkit-text-stroke-width: 2px;
-  font-weight: 600;
-  line-height: 78%;
-}
-@media only screen and (min-width: 1280px) {
+
+  .fullVideoBlock .stroke-text {
+    white-space: nowrap;
+    font-family: obviously-narrow, sans-serif;
+    font-size: 14.6vw;
+    font-weight: 900;
+    line-height: 105%;
+    color: #0000;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .fullVideoBlock .stroke-text {
+      -webkit-text-stroke-width: 2px;
+      font-weight: 800;
+    }
+  }
   .fullVideoBlock .stroke-text {
     -webkit-text-stroke-width: 2px;
     font-weight: 600;
     line-height: 78%;
+  }
+  @media only screen and (min-width: 1280px) {
+    .fullVideoBlock .stroke-text {
+      -webkit-text-stroke-width: 2px;
+      font-weight: 600;
+      line-height: 78%;
+    }
   }
 }
