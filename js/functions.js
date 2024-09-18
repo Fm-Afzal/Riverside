@@ -75,8 +75,15 @@ $(function () {
     }
 });
 
+
+/* Scroll to Top  */
+$(".backtoTop").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: "0" }, 1000);
+});
+/* Scroll to Top End */
+
 new Swiper(".gridPromoSlider", {
-    // mousewheel: true,
     slidesPerView: 1,
     spaceBetween: 16,
 
