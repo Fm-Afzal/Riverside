@@ -956,6 +956,10 @@ p,
   display: none;
 }
 
+.aspect-\[2\/1\]{
+  aspect-ratio: 2/1;
+}
+
 .h-0\.5{
   height: 0.125rem;
 }
@@ -2281,6 +2285,11 @@ p,
      object-fit: scale-down;
 }
 
+.object-bottom{
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -3572,6 +3581,10 @@ body.nav-expanded .main--menu > li > a::after{
 }
 
 @media (min-width: 768px){
+  .md\:aspect-\[758\/265\]{
+    aspect-ratio: 758/265;
+  }
+
   .md\:max-w-\[158px\]{
     max-width: 158px;
   }
