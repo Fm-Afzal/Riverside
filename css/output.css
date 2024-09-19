@@ -2424,6 +2424,10 @@ p,
   font-size: 15px;
 }
 
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
 .text-\[2rem\]{
   font-size: 2rem;
 }
@@ -2436,15 +2440,6 @@ p,
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[2\.5rem\]{
-  font-size: 2.5rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold{
