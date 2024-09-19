@@ -225,14 +225,14 @@ body.nav-expanded .main--menu > li > a::after {
     }
   }
 
-  .fullVideoBlock .stroke-text {
+  .stroke-text {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
     scrollbar-width: none;
   }
 
-  .fullVideoBlock .stroke-text {
+  .stroke-text {
     white-space: nowrap;
     font-family: obviously-narrow, sans-serif;
     font-size: 14.6vw;
@@ -242,18 +242,18 @@ body.nav-expanded .main--menu > li > a::after {
   }
 
   @media only screen and (min-width: 768px) {
-    .fullVideoBlock .stroke-text {
+     .stroke-text {
       -webkit-text-stroke-width: 2px;
       font-weight: 800;
     }
   }
-  .fullVideoBlock .stroke-text {
+  .stroke-text {
     -webkit-text-stroke-width: 2px;
     font-weight: 600;
     line-height: 78%;
   }
   @media only screen and (min-width: 1280px) {
-    .fullVideoBlock .stroke-text {
+     .stroke-text {
       -webkit-text-stroke-width: 2px;
       font-weight: 600;
       line-height: 78%;
