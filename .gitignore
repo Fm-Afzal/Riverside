@@ -26,6 +26,17 @@ ehthumbs.db
 !js/
 !html/
 !index.html
+!about.html
+!weddings.html
+!meetings-and-events.html
+!stay.html
+!sign-up.html
+!happenings.html
+!eat-and-drink.html
+!music-and-entertainment.html
+!shops-and-galleries.html
+!experiences.html
+!news.html
 !.gitignore
 !package.json
 !package-lock.json
