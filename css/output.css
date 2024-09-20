@@ -861,6 +861,14 @@ p,
   margin-top: 1.25rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1652,6 +1660,10 @@ p,
   gap: 2rem;
 }
 
+.gap-30{
+  gap: 1.875rem;
+}
+
 .gap-x-5{
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
@@ -2365,6 +2377,11 @@ p,
   padding-bottom: 2rem;
 }
 
+.py-50{
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -2387,6 +2404,10 @@ p,
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pb-7{
+  padding-bottom: 1.75rem;
 }
 
 .text-left{
@@ -2494,6 +2515,10 @@ p,
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[28px\]{
+  font-size: 28px;
 }
 
 .font-bold{
@@ -3670,12 +3695,34 @@ body.nav-expanded .main--menu > li > a::after{
 }
 
 @media (min-width: 768px){
+  .md\:mb-30{
+    margin-bottom: 1.875rem;
+  }
+
+  .md\:mb-7{
+    margin-bottom: 1.75rem;
+  }
+
+  .md\:flex{
+    display: flex;
+  }
+
   .md\:aspect-\[758\/265\]{
     aspect-ratio: 758/265;
   }
 
   .md\:max-w-\[158px\]{
     max-width: 158px;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
   .md\:py-2\.5{
@@ -4036,6 +4083,35 @@ body.nav-expanded .main--menu > li > a::after{
 
 .\[\&\>\*\]\:opacity-80>*{
   opacity: 0.8;
+}
+
+.\[\&\>h3\]\:font-obviously>h3{
+  font-family: Roboto Condensed, sans-serif;
+}
+
+.\[\&\>h3\]\:text-2xl>h3{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.\[\&\>h3\]\:font-normal>h3{
+  font-weight: 400;
+}
+
+.\[\&\>h4\]\:font-obviously>h4{
+  font-family: Roboto Condensed, sans-serif;
+}
+
+.\[\&\>h4\]\:text-\[0\.9375rem\]>h4{
+  font-size: 0.9375rem;
+}
+
+.\[\&\>h4\]\:font-medium>h4{
+  font-weight: 500;
+}
+
+.\[\&\>h4\]\:tracking-\[0\.05625rem\]>h4{
+  letter-spacing: 0.05625rem;
 }
 
 .\[\&\>li\>a\]\:relative>li>a{
