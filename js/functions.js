@@ -123,3 +123,20 @@ promoSliders.forEach(function (slider) {
     });
 });
 // promoSlider end
+
+new Swiper(".timelineSlider", {
+    slidesPerView: "auto",
+    mousewheel: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        1024: {
+            slidesPerView: 1.2,
+            autoHeight: false,
+        },
+    },
+});
+// timelineSlider end
