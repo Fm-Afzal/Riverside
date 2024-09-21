@@ -1,3 +1,4 @@
+// conflict bugg solution
 var $ = jQuery.noConflict();
 
 $(function () {
@@ -74,13 +75,27 @@ $(function () {
         );
     }
 });
-
-
 /* Scroll to Top  */
 $(".backtoTop").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate({ scrollTop: "0" }, 1000);
 });
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    /* # of pixels before element*/
+    var detectAreaTopOffset = 15;
+    /* # of pixels after element*/
+    var detectAreaBottomOffset = 100;
+    return (
+        elemTop <= docViewBottom + detectAreaTopOffset &&
+        elemBottom >= docViewTop - detectAreaBottomOffset
+    );
+}
 /* Scroll to Top End */
 
 new Swiper(".gridPromoSlider", {
