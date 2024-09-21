@@ -1080,6 +1080,10 @@ p,
   max-width: 995px;
 }
 
+.max-w-\[910px\]{
+  max-width: 910px;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -3008,6 +3012,10 @@ p,
   transition-delay: 500ms !important;
 }
 
+.\!delay-700{
+  transition-delay: 700ms !important;
+}
+
 .duration-300{
   transition-duration: 300ms;
 }
@@ -3703,8 +3711,16 @@ body.nav-expanded .main--menu > li > a::after{
     margin-bottom: 1.75rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:aspect-\[758\/265\]{
