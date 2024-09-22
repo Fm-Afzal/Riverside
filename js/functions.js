@@ -155,3 +155,10 @@ new Swiper(".timelineSlider", {
     },
 });
 // timelineSlider end
+
+// filtering functions for mobile device
+$(".filterPopup").on("click", function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active-filter");
+    $(this).siblings().toggleClass("expand-filter");
+});
