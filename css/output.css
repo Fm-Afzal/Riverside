@@ -1100,6 +1100,10 @@ p,
   max-width: 44.375rem;
 }
 
+.max-w-\[64\.25rem\]{
+  max-width: 64.25rem;
+}
+
 .max-w-\[64\.625rem\]{
   max-width: 64.625rem;
 }
@@ -1118,14 +1122,6 @@ p,
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-\[620px\]{
-  max-width: 620px;
-}
-
-.max-w-\[64\.25rem\]{
-  max-width: 64.25rem;
 }
 
 .flex-1{
@@ -1781,12 +1777,6 @@ p,
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-12 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
-}
-
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 1;
 }
@@ -2260,10 +2250,6 @@ p,
   --tw-border-opacity: 0.4;
 }
 
-.border-opacity-50{
-  --tw-border-opacity: 0.5;
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2481,6 +2467,10 @@ p,
   padding-left: 0.25rem;
 }
 
+.pt-16{
+  padding-top: 4rem;
+}
+
 .pt-2\.5{
   padding-top: 0.625rem;
 }
@@ -2495,10 +2485,6 @@ p,
 
 .pt-8{
   padding-top: 2rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .text-left{
@@ -3125,16 +3111,16 @@ p,
   transition-duration: 150ms;
 }
 
+.\!delay-200{
+  transition-delay: 200ms !important;
+}
+
 .\!delay-300{
   transition-delay: 300ms !important;
 }
 
 .\!delay-500{
   transition-delay: 500ms !important;
-}
-
-.\!delay-200{
-  transition-delay: 200ms !important;
 }
 
 .duration-300{
@@ -4116,6 +4102,10 @@ body .select2-container--open .select2-selection__arrow svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -4126,10 +4116,6 @@ body .select2-container--open .select2-selection__arrow svg {
 
   .lg\:grid-cols-8{
     grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
@@ -4266,10 +4252,6 @@ body .select2-container--open .select2-selection__arrow svg {
 
   .lg\:pt-8{
     padding-top: 2rem;
-  }
-
-  .lg\:pt-\[90px\]{
-    padding-top: 90px;
   }
 
   .lg\:text-left{
