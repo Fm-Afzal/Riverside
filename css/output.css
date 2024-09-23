@@ -2777,6 +2777,10 @@ p,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-white\/50{
+  color: rgb(255 255 255 / 0.5);
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -3863,6 +3867,11 @@ body .select2-container--open .select2-selection__arrow svg {
 
 .hover\:font-bold:hover{
   font-weight: 700;
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:before\:bg-black\/50:hover::before{
