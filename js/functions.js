@@ -156,6 +156,23 @@ new Swiper(".timelineSlider", {
 });
 // timelineSlider end
 
+new Swiper(".gallerySlider", {
+    slidesPerView: "auto",
+    spaceBetween: 14,
+    mousewheel: true,
+    navigation: {
+        nextEl: ".gallery-next",
+        prevEl: ".gallery-prev",
+    },
+    breakpoints: {
+        1024: {
+            spaceBetween: 22,
+        },
+    },
+});
+// gallerySlider end
+
+
 // filtering functions for mobile device
 $(".filterPopup").on("click", function (e) {
     e.preventDefault();

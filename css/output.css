@@ -1032,6 +1032,10 @@ p,
   height: 100%;
 }
 
+.h-\[393px\]{
+  height: 393px;
+}
+
 .max-h-0{
   max-height: 0px;
 }
@@ -1074,6 +1078,10 @@ p,
 
 .w-full{
   width: 100%;
+}
+
+.w-\[556px\]{
+  width: 556px;
 }
 
 .max-w-16{
@@ -1712,9 +1720,31 @@ p,
   gap: 2rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
 .gap-x-5{
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-x-10{
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-x-\[0\.625rem\]{
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+}
+
+.gap-y-6{
+  row-gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -1823,6 +1853,11 @@ p,
 
 .divide-none > :not([hidden]) ~ :not([hidden]){
   border-style: none;
+}
+
+.divide-black > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-divide-opacity));
 }
 
 .place-self-auto{
@@ -2739,6 +2774,14 @@ p,
   line-height: 123%;
 }
 
+.leading-15{
+  line-height: 0.9375rem;
+}
+
+.leading-\[15px\]{
+  line-height: 15px;
+}
+
 .tracking-\[0\.045rem\]{
   letter-spacing: 0.045rem;
 }
@@ -2753,6 +2796,10 @@ p,
 
 .tracking-\[0\.9px\]{
   letter-spacing: 0.9px;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 
 .text-Darkgray{
@@ -3927,6 +3974,10 @@ body .select2-container--open .select2-selection__arrow svg {
   fill: #fff;
 }
 
+.group:hover .group-hover\:fill-black{
+  fill: #000;
+}
+
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
 }
@@ -3938,6 +3989,10 @@ body .select2-container--open .select2-selection__arrow svg {
 }
 
 @media (min-width: 768px){
+  .md\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
   .md\:mb-30{
     margin-bottom: 1.875rem;
   }
@@ -3974,8 +4029,20 @@ body .select2-container--open .select2-selection__arrow svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:gap-\[22px\]{
     gap: 22px;
+  }
+
+  .md\:gap-\[14px\]{
+    gap: 14px;
   }
 
   .md\:space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -3992,6 +4059,11 @@ body .select2-container--open .select2-selection__arrow svg {
   .md\:py-50{
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
+  }
+
+  .md\:py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .md\:pt-24{
@@ -4090,6 +4162,10 @@ body .select2-container--open .select2-selection__arrow svg {
     width: 410px;
   }
 
+  .lg\:w-\[328px\]{
+    width: 328px;
+  }
+
   .lg\:max-w-full{
     max-width: 100%;
   }
@@ -4175,6 +4251,11 @@ body .select2-container--open .select2-selection__arrow svg {
          column-gap: 5rem;
   }
 
+  .lg\:gap-x-16{
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
   .lg\:space-x-20 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(5rem * var(--tw-space-x-reverse));
@@ -4220,6 +4301,11 @@ body .select2-container--open .select2-selection__arrow svg {
   .lg\:py-16{
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .lg\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:pb-0{
@@ -4377,6 +4463,10 @@ body .select2-container--open .select2-selection__arrow svg {
   font-weight: 400;
 }
 
+.\[\&\>h3\]\:leading-\[110\%\]>h3{
+  line-height: 110%;
+}
+
 .\[\&\>h4\]\:font-obviously>h4{
   font-family: Roboto Condensed, sans-serif;
 }
@@ -4455,6 +4545,23 @@ body .select2-container--open .select2-selection__arrow svg {
   padding-bottom: 0.625rem;
 }
 
+.\[\&\>ol\]\:list-decimal>ol{
+  list-style-type: decimal;
+}
+
+.\[\&\>ol\]\:pl-6>ol{
+  padding-left: 1.5rem;
+}
+
+.\[\&\>ol\]\:text-base>ol{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.\[\&\>ol\]\:leading-\[150\%\]>ol{
+  line-height: 150%;
+}
+
 .\[\&\>p\]\:pt-6>p{
   padding-top: 1.5rem;
 }
@@ -4476,6 +4583,10 @@ body .select2-container--open .select2-selection__arrow svg {
   line-height: 1.5rem;
 }
 
+.\[\&\>p\]\:leading-\[150\%\]>p{
+  line-height: 150%;
+}
+
 .\[\&\>p\]\:text-black\/50>p{
   color: rgb(0 0 0 / 0.5);
 }
@@ -4494,4 +4605,21 @@ body .select2-container--open .select2-selection__arrow svg {
 
 .\[\&\>svg\]\:max-w-3\.5>svg{
   max-width: 0.875rem;
+}
+
+.\[\&\>ul\]\:list-disc>ul{
+  list-style-type: disc;
+}
+
+.\[\&\>ul\]\:pl-6>ul{
+  padding-left: 1.5rem;
+}
+
+.\[\&\>ul\]\:text-base>ul{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.\[\&\>ul\]\:leading-\[150\%\]>ul{
+  line-height: 150%;
 }
