@@ -873,6 +873,14 @@ p,
   margin-top: 1.25rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -3516,6 +3524,30 @@ body .select2-container--open .select2-selection__arrow svg {
   transform: rotate(180deg);
 } */
 
+.newsletterPopup input[type="email"],
+.newsletterPopup input[type="text"] {
+  height: auto;
+  width: 100%;
+  flex: 1 1 0%;
+  border-radius: 0;
+  border-width: 1px;
+  border-color: #f4f4f480;
+  background-color: #f4f4f480;
+  padding: 1rem 2rem 0.875rem 1.25rem;
+  font-family: nunito, sans-serif;
+  font-size: 1rem;
+  outline: none;
+  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 100%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;
@@ -4315,6 +4347,31 @@ body .select2-container--open .select2-selection__arrow svg {
 
 .\[\&\>li\]\:pb-2\.5>li{
   padding-bottom: 0.625rem;
+}
+
+.\[\&\>p\]\:pt-6>p{
+  padding-top: 1.5rem;
+}
+
+.\[\&\>p\]\:text-center>p{
+  text-align: center;
+}
+
+.\[\&\>p\]\:text-base>p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.\[\&\>p\]\:font-normal>p{
+  font-weight: 400;
+}
+
+.\[\&\>p\]\:leading-6>p{
+  line-height: 1.5rem;
+}
+
+.\[\&\>p\]\:text-black\/50>p{
+  color: rgb(0 0 0 / 0.5);
 }
 
 .\[\&\>span\>svg\]\:h-5>span>svg{
