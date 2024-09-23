@@ -984,6 +984,10 @@ p,
   aspect-ratio: 2/1;
 }
 
+.aspect-\[173\/50\]{
+  aspect-ratio: 173/50;
+}
+
 .h-0\.5{
   height: 0.125rem;
 }
@@ -1098,6 +1102,10 @@ p,
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
 }
 
 .flex-1{
@@ -2445,6 +2453,10 @@ p,
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .text-left{

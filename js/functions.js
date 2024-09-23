@@ -162,3 +162,7 @@ $(".filterPopup").on("click", function (e) {
     $(this).toggleClass("active-filter");
     $(this).siblings().toggleClass("expand-filter");
 });
+
+$(".mapImgPopup").magnificPopup({
+    type: "image",
+  });
