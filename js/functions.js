@@ -165,4 +165,22 @@ $(".filterPopup").on("click", function (e) {
 
 $(".mapImgPopup").magnificPopup({
     type: "image",
-  });
+});
+
+/* accordion function */
+/* ------------------------------------------- */
+
+//BEGIN
+$(".accordion-header").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+
+    if (!$this.hasClass("accordion-active")) {
+        $(".accordion-body").slideUp(400);
+        $(".accordion-header").removeClass("accordion-active");
+    }
+
+    $this.toggleClass("accordion-active");
+    $this.next().slideToggle();
+});
+//END
