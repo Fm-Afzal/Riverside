@@ -1012,6 +1012,10 @@ p,
   height: 13.8215rem;
 }
 
+.h-\[225px\]{
+  height: 225px;
+}
+
 .h-\[260px\]{
   height: 260px;
 }
@@ -1046,10 +1050,6 @@ p,
 
 .h-full{
   height: 100%;
-}
-
-.h-\[225px\]{
-  height: 225px;
 }
 
 .max-h-0{
