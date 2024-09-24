@@ -184,6 +184,29 @@ $(".mapImgPopup").magnificPopup({
     type: "image",
 });
 
+$(".popup-gallery").magnificPopup({
+    delegate: "a",
+    type: "image",
+    overflowY: "auto",
+    showCloseBtn: false,
+    gallery: {
+      enabled: true,
+    },
+    callbacks: {
+      open: function () {
+        $(".mfp-counter").hide();
+      },
+    },
+    image: {
+      titleSrc: function (item) {
+        return item.el.attr("title");
+      },
+    },
+    // mainClass: "my-mfp-zoom-in",
+  });
+
+  // End of Magnific Popup
+
 /* accordion function */
 /* ------------------------------------------- */
 

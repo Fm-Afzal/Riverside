@@ -1048,6 +1048,10 @@ p,
   height: 100%;
 }
 
+.h-\[225px\]{
+  height: 225px;
+}
+
 .max-h-0{
   max-height: 0px;
 }
