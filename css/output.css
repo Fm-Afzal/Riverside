@@ -4275,10 +4275,6 @@ body .select2-container--open .select2-selection__arrow svg {
     align-items: flex-start;
   }
 
-  .lg\:items-end{
-    align-items: flex-end;
-  }
-
   .lg\:items-center{
     align-items: center;
   }
