@@ -25,7 +25,7 @@
                     <li><a href="meetings-and-events.html">Meetings & Events</a>
                     </li>
                     <li><a href="stay.html">Stay</a></li>
-                    <li><a href="sign-up.html">Sign Up</a></li>
+                    <li  class="ShowNewsletterPopup"><a href="#">Sign Up</a></li>
                 </ul>
             </div>
 
@@ -65,7 +65,7 @@
                     </nav><!-- main menu -->
 
                     <div class="ml-auto lg:pb-2.5">
-                        <a class="searchBtn" href="#">
+                        <a class="searchBtn" href="search.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -462,11 +462,11 @@
                         <li id="menu-item-348"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-348"><a
                                 href="about.html">About</a></li>
-                         <li id="menu-item-347"
+                        <li id="menu-item-347"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-347">
                             <a rel="privacy-policy" href="privacy-policy.html">Privacy Policy</a>
                         </li>
-                       
+
                     </ul>
                 </div>
 
@@ -583,7 +583,47 @@
 
         </div>
     </footer>
+    <div class="newsletter__popup 
+    fixed inset-0 w-full h-full z-0 hidden items-center justify-center opacity-0 ">
+        <span class="close_newsletterPopup absolute h-full w-full left-0 top-0 bg-black opacity-70 z-0"></span>
 
+        <div
+            class="newsletterPopup relative z-10 bg-white p-8 md:p-16 w-full max-w-4xl h-full max-h-[37rem] flex flex-col items-center justify-center">
+            <span class="close_newsletterPopup absolute top-4 right-4 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <rect opacity="0.6" x="17.7207" y="1.42871" width="2.14286" height="23.0421" rx="1.07143"
+                        transform="rotate(45 17.7207 1.42871)" fill="black"></rect>
+                    <rect opacity="0.6" width="2.14286" height="23.4249" rx="1.07143"
+                        transform="matrix(-0.707107 0.707107 0.707107 0.707107 3.43457 1.42871)" fill="black"></rect>
+                </svg>
+            </span>
+
+            <h2 class="max-w-80 text-center">GET ON THE LIST</h2>
+
+            <div
+                class="[&>p]:pt-6 [&>p]:text-base [&>p]:text-black/50 [&>p]:font-normal [&>p]:leading-6 [&>p]:max-w-xl [&>p]:text-center">
+                <p>Sign Up for Insider Access to Events, Offers and Dining!</p>
+            </div>
+
+            <form method="post" class="w-full max-w-xl flex flex-col items-center gap-5 mt-9">
+                <input type="text" name="First Name"" placeholder=" First Name*">
+                <input type="text" name="Last Name" placeholder="Last Name*">
+                <input type="email" name="Email" placeholder="Email Address*">
+                <input type="number" name="Postal Code" placeholder="ZIP/POSTAL CODE">
+                <input type="date" placeholder="ZIP/POSTAL CODE">
+                <button type="submit" value="Submit" class="button group mt-8">
+                    <span>Subscribe</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                        <path opacity="0.5"
+                            d="M2.66732 8C2.53471 8 2.40753 8.05268 2.31376 8.14645C2.22 8.24021 2.16732 8.36739 2.16732 8.5C2.16732 8.63261 2.22 8.75978 2.31376 8.85355C2.40753 8.94732 2.53471 9 2.66732 9L2.66732 8ZM2.66732 9L13.334 9L13.334 8L2.66732 8L2.66732 9Z"
+                            fill="black"></path>
+                        <path d="M9.33398 12.5L13.334 8.5L9.33398 4.5" stroke="black" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
     <script src="js/jQuery.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jarallax.min.js"></script>
