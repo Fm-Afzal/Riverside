@@ -704,6 +704,10 @@ p,
   inset: -0.25rem;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
 .bottom-0{
   bottom: 0px;
 }
@@ -732,6 +736,10 @@ p,
   right: 0px;
 }
 
+.right-4{
+  right: 1rem;
+}
+
 .right-6{
   right: 1.5rem;
 }
@@ -746,6 +754,10 @@ p,
 
 .top-24{
   top: 6rem;
+}
+
+.top-4{
+  top: 1rem;
 }
 
 .top-full{
@@ -1056,6 +1068,10 @@ p,
   max-height: 0px;
 }
 
+.max-h-\[37rem\]{
+  max-height: 37rem;
+}
+
 .max-h-\[70vh\]{
   max-height: 70vh;
 }
@@ -1104,12 +1120,20 @@ p,
   max-width: 4rem;
 }
 
+.max-w-4xl{
+  max-width: 56rem;
+}
+
 .max-w-56{
   max-width: 14rem;
 }
 
 .max-w-5xl{
   max-width: 64rem;
+}
+
+.max-w-80{
+  max-width: 20rem;
 }
 
 .max-w-\[120px\]{
@@ -1146,6 +1170,10 @@ p,
 
 .max-w-full{
   max-width: 100%;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .flex-1{
@@ -2280,6 +2308,10 @@ p,
   border-top-width: 1px;
 }
 
+.\!border-b{
+  border-bottom-width: 1px !important;
+}
+
 .border-solid{
   border-style: solid;
 }
@@ -2464,6 +2496,10 @@ p,
 
 .p-5{
   padding: 1.25rem;
+}
+
+.p-8{
+  padding: 2rem;
 }
 
 .\!px-0{
@@ -2701,6 +2737,10 @@ p,
   line-height: 1rem;
 }
 
+.text-64{
+  font-size: 4rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -2841,6 +2881,10 @@ p,
   line-height: 15px;
 }
 
+.leading-64{
+  line-height: 4rem;
+}
+
 .tracking-\[0\.045rem\]{
   letter-spacing: 0.045rem;
 }
@@ -2951,6 +2995,10 @@ p,
 
 .opacity-0{
   opacity: 0;
+}
+
+.opacity-70{
+  opacity: 0.7;
 }
 
 .opacity-80{
@@ -3223,10 +3271,6 @@ p,
 
 .\!delay-200{
   transition-delay: 200ms !important;
-}
-
-.\!delay-300{
-  transition-delay: 300ms !important;
 }
 
 .\!delay-500{
@@ -3694,19 +3738,27 @@ body .select2-container--open .select2-selection__arrow svg {
   transform: rotate(180deg);
 } */
 
+.newsletter__popup.popUp-show {
+  z-index: 9991;
+  display: flex;
+  opacity: 1;
+}
+
+.newsletterPopup input[type="text"],
 .newsletterPopup input[type="email"],
-.newsletterPopup input[type="text"] {
+.newsletterPopup input[type="number"],
+.newsletterPopup input[type="date"] {
   height: auto;
   width: 100%;
   flex: 1 1 0%;
   border-radius: 0;
+  outline: none;
   border-width: 1px;
   border-color: #f4f4f480;
   background-color: #f4f4f480;
   padding: 1rem 2rem 0.875rem 1.25rem;
   font-family: nunito, sans-serif;
   font-size: 1rem;
-  outline: none;
   line-height: 1.5rem;
   font-weight: 400;
   line-height: 100%;
@@ -4120,6 +4172,10 @@ body .select2-container--open .select2-selection__arrow svg {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
+  .md\:p-16{
+    padding: 4rem;
+  }
+
   .md\:py-2\.5{
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
@@ -4147,12 +4203,20 @@ body .select2-container--open .select2-selection__arrow svg {
     font-size: 10.5rem;
   }
 
+  .md\:text-80{
+    font-size: 5rem;
+  }
+
   .md\:leading-44{
     line-height: 2.75rem;
   }
 
   .md\:leading-\[110\%\]{
     line-height: 110%;
+  }
+
+  .md\:leading-80{
+    line-height: 5rem;
   }
 
   .md\:before\:left-\[2\.5px\]::before{
@@ -4629,6 +4693,10 @@ body .select2-container--open .select2-selection__arrow svg {
 
 .\[\&\>ol\]\:leading-\[150\%\]>ol{
   line-height: 150%;
+}
+
+.\[\&\>p\]\:max-w-xl>p{
+  max-width: 36rem;
 }
 
 .\[\&\>p\]\:pt-6>p{

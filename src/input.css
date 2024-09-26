@@ -338,19 +338,27 @@ body .select2-container--open .select2-selection__arrow svg {
   transform: rotate(180deg);
 } */
 
+.newsletter__popup.popUp-show {
+  z-index: 9991;
+  display: flex;
+  opacity: 1;
+}
+
+.newsletterPopup input[type="text"],
 .newsletterPopup input[type="email"],
-.newsletterPopup input[type="text"] {
+.newsletterPopup input[type="number"],
+.newsletterPopup input[type="date"] {
   height: auto;
   width: 100%;
   flex: 1 1 0%;
   border-radius: 0;
+  outline: none;
   border-width: 1px;
   border-color: #f4f4f480;
   background-color: #f4f4f480;
   padding: 1rem 2rem 0.875rem 1.25rem;
   font-family: nunito, sans-serif;
   font-size: 1rem;
-  outline: none;
   line-height: 1.5rem;
   font-weight: 400;
   line-height: 100%;

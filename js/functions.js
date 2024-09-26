@@ -190,22 +190,22 @@ $(".popup-gallery").magnificPopup({
     overflowY: "auto",
     showCloseBtn: false,
     gallery: {
-      enabled: true,
+        enabled: true,
     },
     callbacks: {
-      open: function () {
-        $(".mfp-counter").hide();
-      },
+        open: function () {
+            $(".mfp-counter").hide();
+        },
     },
     image: {
-      titleSrc: function (item) {
-        return item.el.attr("title");
-      },
+        titleSrc: function (item) {
+            return item.el.attr("title");
+        },
     },
     // mainClass: "my-mfp-zoom-in",
-  });
+});
 
-  // End of Magnific Popup
+// End of Magnific Popup
 
 /* accordion function */
 /* ------------------------------------------- */
@@ -224,3 +224,12 @@ $(".accordion-header").on("click", function (e) {
     $this.next().slideToggle();
 });
 //END
+$(".ShowNewsletterPopup").on("click", function (e) {
+    e.preventDefault();
+    $(".newsletter__popup").addClass("popUp-show");
+});
+
+// Close the popup
+$(".close_newsletterPopup").on("click", function () {
+    $(".newsletter__popup").removeClass("popUp-show");
+});
