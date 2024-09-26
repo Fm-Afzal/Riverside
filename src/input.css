@@ -49,7 +49,9 @@ body.nav-expanded .siteLogo svg *,
 body.nav-expanded .searchBtn svg * {
   fill: black;
 }
-
+body.nav-expanded .siteLogo {
+  background-color: #000;
+}
 body.nav-expanded .top--menu > li > a,
 body.nav-expanded .main--menu > li > a {
   @apply text-black;
